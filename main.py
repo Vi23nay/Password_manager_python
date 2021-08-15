@@ -103,7 +103,7 @@ website_entry.grid(row=1, column=1, columnspan=2, sticky="EW")
 website_entry.focus()
 email_entry = Entry(width=35)
 email_entry.grid(row=2, column=1, columnspan=2, sticky="EW")
-email_entry.insert(0, "ma23hender@gmail.com")
+email_entry.insert(0, "vi23nay.vs@gmail.com")
 password_entry = Entry(width=21)
 password_entry.grid(row=3, column=1, sticky="EW")
 
@@ -135,8 +135,8 @@ def light():
 radio_state = IntVar()
 radiobutton1 = Radiobutton(text="Dark", value=1, variable=radio_state, command=dark)
 radiobutton2 = Radiobutton(text="Light", value=2, variable=radio_state, command=light)
-radiobutton1.grid(row=6,column=1)
-radiobutton2.grid(row=6,column=2)
+radiobutton1.grid(row=6,column=1,sticky="EW")
+radiobutton2.grid(row=6,column=2,sticky="EW")
 
 window.mainloop()
 
